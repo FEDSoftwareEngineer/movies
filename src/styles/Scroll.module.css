@@ -1,0 +1,56 @@
+.scrollSection {
+  position: relative;
+}
+.scrollBox {
+  margin-bottom: 120px;
+  overflow: hidden;
+  margin-top: 60px;
+  position: relative;
+}
+.scroll {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+.scrollItem {
+  margin-right: 10px;
+}
+.scrollRight {
+  display: none;
+  position: absolute;
+  right: -60px;
+  top: 40%;
+  color: white;
+  width: 40px;
+  height: 40px;
+}
+.scrollLeft {
+  display: none;
+  position: absolute;
+  left: -60px;
+  top: 40%;
+  color: white;
+  width: 40px;
+  height: 40px;
+}
+.scrollLeft:hover,
+.scrollRight:hover {
+  transition: 0.25s;
+  cursor: pointer;
+  color: red;
+}
+
+.scrollTitle {
+  color: white;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+  .scrollLeft,
+  .scrollRight {
+    display: none !important;
+  }
+}

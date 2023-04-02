@@ -1,0 +1,95 @@
+.singleMovie {
+  display: flex;
+  flex-direction: column;
+}
+.movie {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  background-color: rgb(34, 34, 34);
+  width: 900px;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.singleMovieBtn {
+  justify-self: center;
+  align-self: center;
+  background-color: red;
+  transform: translateY(40px);
+  padding: 8px 13px;
+  border-radius: 5px;
+  color: white;
+  font-size: 27px;
+}
+.error {
+  top: 140px;
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  font-size: 28px;
+  color: rgb(207, 207, 207);
+  margin-bottom: 25px;
+}
+.singleMovieBtn:hover {
+  background-color: rgb(163, 0, 0);
+}
+
+.left {
+  cursor: pointer;
+  display: flex;
+  width: 160px;
+  justify-content: space-around;
+  transform: translate(20px, 185px);
+  align-self: flex-start;
+  justify-self: flex-start;
+  color: rgb(226, 225, 225);
+}
+.right {
+  cursor: pointer;
+  display: flex;
+  width: 80px;
+  justify-content: space-around;
+  transform: translate(0px, 170px);
+  align-self: flex-end;
+  justify-self: flex-end;
+  color: rgb(226, 225, 225);
+}
+
+@media (max-width: 700px) {
+  .singleMovie {
+    height: 40vh;
+  }
+  .movie {
+    height: 210px;
+    width: 350px;
+  }
+  .left {
+    width: 150px;
+    transform: translate(20px, 70px);
+  }
+  .left svg {
+    width: 17px;
+    height: 17px;
+  }
+  .right {
+    width: 60px;
+    transform: translate(0px, 50px);
+  }
+  .right svg {
+    width: 17px;
+    height: 17px;
+  }
+  .error {
+    top: 40px;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+  }
+  .singleMovieBtn {
+    font-size: 20px;
+  }
+}

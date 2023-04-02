@@ -1,0 +1,70 @@
+.movieCover {
+  position: relative;
+  cursor: pointer;
+  width: 270px;
+  height: 150px;
+  overflow: hidden;
+  color: white;
+  background-size: cover;
+}
+.movieCover h1 {
+  font-weight: 600;
+  height: 10px;
+  font-size: 16px;
+  transform: translateY(-5px);
+}
+.movieCover p {
+  font-weight: 300;
+  height: 3px;
+}
+.movieCoverImg {
+  z-index: -1;
+  width: 270px;
+  height: 150px;
+  background-color: black;
+  position: absolute;
+}
+.movieCoverImg img {
+  width: 100%;
+  opacity: 0.7;
+}
+.movieItems {
+  transform: translateY(80px);
+  margin: 10px;
+}
+.movieCover:hover img {
+  transition: 0.25s;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.movieCover:hover h1 {
+  transition: 0.25s;
+  display: none;
+}
+.movieCover:hover p {
+  transition: 0.25s;
+  display: none;
+}
+.movieHover {
+  color: rgb(255, 0, 0);
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+.heroCoverImg .movieHover {
+  left: 50px;
+}
+.movieCover:hover .movieHover {
+  display: flex;
+}
+.heroCoverImg:hover .movieHover {
+  display: flex;
+}
+.rowBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
