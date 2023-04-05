@@ -17,7 +17,7 @@ export default function Scroll({ type }) {
       const tempData = data.filter((item) => item.type.includes(type) === true);
       setNewData(tempData);
     }
-  }, []);
+  }, [type]);
 
   if (newData[0] === undefined) {
     return <h1>Loading</h1>;

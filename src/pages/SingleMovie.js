@@ -10,14 +10,15 @@ import {
   FaUndoAlt,
 } from "react-icons/fa";
 import style from "../styles/SingleMovie.module.css";
+import Loading from "../components/LoadingSuspense";
 
 export default function SingleMovie() {
   const { movie } = useParams();
   const [theMovie, setTheMovie] = useState();
   useEffect(() => {
     setTheMovie(data.find((item) => item.title === movie));
-  }, []);
-  if (theMovie === undefined) return <h1>Loading...</h1>;
+  }, [movie]);
+  if (theMovie === undefined) return <Loading />;
 
   return (
     <div className="container">
