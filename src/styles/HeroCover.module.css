@@ -17,6 +17,9 @@
   height: 10px;
   font-weight: 400;
 }
+.heroDetails h1 {
+  display: inline-block;
+}
 .heroDetails h1:hover {
   color: red;
   cursor: pointer;
