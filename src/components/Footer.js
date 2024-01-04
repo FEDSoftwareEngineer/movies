@@ -14,7 +14,7 @@ export default function Footer() {
                 href="https://www.webdegan.netlify.app"
                 className={style.website}
               >
-                🌐 webdegan.com
+                🌐 www.webdegan.netlify.app
               </a>
             </span>
           </div>
